@@ -40,6 +40,14 @@ namespace TypesAndVariables
 
             double numberFive = 3.14d;
 
+            // Decimal
+
+            decimal numberSix = 3.14159265359m;
+
+            // Var
+
+            var numberSeven = 10;
+
             Console.WriteLine("Number One: {0}", numberOne);
             Console.WriteLine("Number Two: {0}", numberTwo);
             Console.WriteLine("Number Three: {0}", numberThree);
@@ -47,9 +55,16 @@ namespace TypesAndVariables
             Console.WriteLine("Condition: {0}", condition);
             Console.WriteLine("Character: {0}", character);
             Console.WriteLine("Number Five: {0}", numberFive);
-
+            Console.WriteLine("Number Six: {0}", numberSix);
+            Console.WriteLine("Day: {0}", Days.Friday);
+            Console.WriteLine("Number Seven: {0}", numberSeven);
 
             Console.ReadKey();
+        }
+
+        enum Days
+        {
+            Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
         }
     }
 }
